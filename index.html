@@ -186,7 +186,21 @@
     <h4>Output Format</h4>
     <p> - Return "YES" (without quotes) if all the students pass in your class; otherwise, print "NO" 
         (without quotes).</p>
-    <pre> → Ans  </pre>
+    <pre> → Ans  
+      const isAllPass = (N, Arr) => 
+{
+    let pass =[]
+    
+    for(i=0; i<N; i++){
+      if(Arr[i]>=32){
+        return "YES"
+      }
+      else{
+        console.log("NO")
+      }
+    }
+};
+    </pre>
     <hr>
 
     <h4><span class="Q">Q9.Unique Color Shirt</span> </h4>
@@ -231,7 +245,32 @@
         integers.</p>
     <h4>Output Format</h4>
     <p> - Return minimum and maximum elements.</p>
-    <pre> → Ans  </pre>
+    <pre> → Ans  
+      function arrayMin(arr) {
+  
+        let minvalue = 1
+        
+        for(i=0; i<arr.length; i++){
+          if(arr[i]<minvalue){
+            minvalue = arr[i]
+          }
+        }
+      return minvalue
+      }
+      
+      function arrayMax(arr) {
+       let maxvalue =0
+        
+        for(i=0; i<arr.length; i++){
+          if(arr[i]>maxvalue){
+            maxvalue = arr[i]
+          }
+        }
+      return maxvalue
+      
+      }
+      
+    </pre>
     <hr>
 
     <h4><span class="Q">Q11 .Birthday Game</span> </h4>
