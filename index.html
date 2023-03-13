@@ -282,8 +282,27 @@
         - The second line consists of N space-separated integers A [i], consisting of numbers on the chocolate bar squares.<br>
         - The third line contains an integer D and M which denotes Yatharth's birthday and his birth month respectively.<br></p>
     <h4>Output Format</h4>
-    <p> - </p>
-    <pre> → Ans  </pre>
+    <p> - Print an integer denoting the total number of ways that Anamika can partition her chocolate bar to share 
+      with Yatharth.</p>
+    <pre> → Ans  
+      function Birthday_Game(arr,D ,M) {
+        let N =arr.length
+        let count =0
+        
+        for(i=0; i<N-M+1; i++){
+          
+          let sum = 0
+          
+          for(j=i; j&lt;M+i; j++){
+            sum+=arr[j]
+          }
+          if(sum===D){
+            count++
+          }
+       }
+          return count
+       }
+      </pre>
     <hr>
 </body>
 </html>
